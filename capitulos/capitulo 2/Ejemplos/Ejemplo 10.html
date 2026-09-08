@@ -1,0 +1,62 @@
+<DOCTYPE html>
+
+<!--fIG. 2.12: tabla básica.-->
+<!--creación de una tabla básica -->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Una tabla de HTML5 simple</title>
+    </head>
+
+    <body>
+        <!--La etiqueta <table> abre una tabla-->
+            <table border = "1">
+
+                <!--la etiquet <caption> sintetiza el contenido de-->
+                <!--la tabla (esto ayuda a las personas con discapacidad visual)-->
+                <caption><strong>Tabla de frutas (1era columna) y 
+                    sus precios (2da columna)</strong></caption>
+                    
+                    <!--la sección <thead> aparece primero en la tabla -->
+                    <!--da formato al área del encabezado de la tabla-->
+                    <thead>
+                        <tr><!-- <tr> Inserta una fila en la tabla-->
+                      <ht>Fruta</ht> <!--Inserta celda de encabezado-->
+                      <ht> Precio</ht>
+                        </tr>
+                    </thead>
+
+                    <!-- la sección <tfoot> aparece al último en la tabla-->
+                    <!-- da formato al pies de la tabla-->
+                     <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th>$3.75</th>
+                        </tr>
+                     </tfoot>
+
+                     <!--Todo el contenido de la tabla está encerrado -->
+                     <!--dentro del elmento <tbody>-->
+                        <tbody>
+                            <tr>
+                                <td>Manzana</td>
+                                <td>$0.25</td>
+                            </tr>
+                            <tr>
+                                <td>Naranja</td>
+                                <td>$0.50</td>
+                            </tr>
+                            <tr>
+                                <td>pl&aacute;tano</td>
+                                <td>$1.00</td>
+                            </tr>
+                            <tr>
+                                <td>pi&ntilde;a</td>
+                                <td>$2.00</td>
+                            </tr>
+                        </tbody>
+            </table>
+            <button onclick="history.back()">Regresar</button>
+    </body>
+</html>
+                        

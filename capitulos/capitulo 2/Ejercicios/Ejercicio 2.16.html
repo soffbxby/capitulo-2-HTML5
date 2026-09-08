@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 2.16 - Formulario de retroalimentación -->
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <title>Ejercicio 2.16</title>
+</head>
+<body>
+
+   <h1>Formulario de Retroalimentación de la Visita al Campus</h1>
+   <p>Por favor, complete el siguiente formulario para ayudarnos a mejorar nuestras visitas.</p>
+
+   <form action="https://deitel.com" method="post">
+
+      <!-- Datos Personales -->
+      <p>
+         <label for="nombre">Nombre:</label><br>
+         <input type="text" id="nombre" name="nombre" required>
+      </p>
+
+      <p>
+         <label for="correo">Correo Electrónico:</label><br>
+         <input type="email" id="correo" name="correo" required>
+      </p>
+
+      <!-- Casillas de verificación (Lo que más les gustó) -->
+      <p><strong>¿Qué fue lo que más le gustó del campus?</strong> (Puede seleccionar varias opciones)</p>
+      <p>
+         <label><input type="checkbox" name="gustos" value="campus"> Campus</label><br>
+         <label><input type="checkbox" name="gustos" value="estudiantes"> Estudiantes</label><br>
+         <label><input type="checkbox" name="gustos" value="ubicacion"> Ubicación</label><br>
+         <label><input type="checkbox" name="gustos" value="ambiente"> Ambiente</label><br>
+         <label><input type="checkbox" name="gustos" value="dormitorios"> Dormitorios</label><br>
+         <label><input type="checkbox" name="gustos" value="deportes"> Deportes</label>
+      </p>
+
+      <!-- Botones de opción (Cómo supieron sobre la universidad) -->
+      <p><strong>¿Cómo supo sobre la universidad?</strong></p>
+      <p>
+         <label><input type="radio" name="como_supo" value="amigos" required> Amigos</label><br>
+         <label><input type="radio" name="como_supo" value="television"> Televisión</label><br>
+         <label><input type="radio" name="como_supo" value="internet"> Internet</label><br>
+         <label><input type="radio" name="como_supo" value="otro"> Otro</label>
+      </p>
+
+      <!-- Área de texto para comentarios adicionales -->
+      <p>
+         <label for="comentarios"><strong>Comentarios adicionales:</strong></label><br>
+         <textarea id="comentarios" name="comentarios" rows="5" cols="50" placeholder="Escriba aquí sus comentarios..."></textarea>
+      </p>
+
+      <!-- Botones de envío y restablecimiento -->
+      <p>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Restablecer">
+      </p>
+
+   </form>
+<button onclick="history.back()">Regresar</button>
+</body>
+</html>
